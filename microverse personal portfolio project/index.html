@@ -1,40 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <nav id="navbar">
-      <ul>
-        <a href="#about"><li>About</li></a>
-        <a href="#work"><li>Work</li></a>
-        <a href="#contact"><li>Contact</li></a>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
-    <section id="welcome-section">
-      <h1>Welcome to my portfolio page</h1>
-      <a
-        href="https://github.com/Tesfamariam777"
-        id="profile-link"
-        target="_blank"
-        >My github profile</a
-      >
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey I am Chisom</h1>
+      <p>a web developer</p>
     </section>
-    <section id="projects">
-      <a
-        href="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
-      >
-        <img class="project-tile" alt="project" />
-      </a>
-      <a
-        href="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-      >
-        <img class="project-tile" alt="project" />
-      </a>
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">Here are some of my projects</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="project"
+          />
+          <p class="project-title">Tribute Page</p>
+        </a>
+      </div>
     </section>
-    <script src="js/index.js"></script>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>Find me on GitHub</p>
+      </div>
+      <div class="contact-links">
+        <a
+          id="profile-link"
+          href="https://github.com/Stanley-Chisom"
+          target="_blank"
+          class="btn contact-details"
+        >
+          GitHub</a
+        >
+      </div>
+    </section>
   </body>
 </html>
